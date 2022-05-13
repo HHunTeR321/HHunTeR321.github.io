@@ -1,29 +1,97 @@
-
-    /*selector universal*/
 *{
-    margin: 10px 0 0 10px  ;
+    margin: 0;
+    padding: 0;
 }
 
-/*selector simple*/
+html{
+    background-image: url(https://www.teahub.io/photos/full/245-2453892_fondos-de-ciudades-de-noche-hd.jpg);
+    background-position: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    background-color: rgba(128, 128, 128, 0.906);
+    
+    background-size: cover;
+}
+
 body{
-    background-color: rgb(108, 106, 239);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+    font-size: 1.5em;
+
+    min-height: 100%;
 }
 
-h1{
-    color: brown;
+.titulo{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+color: brown;
+text-shadow: 0px 0px 9px rgb(98, 93, 93);
+}
+
+.menu{
+    
     text-align: center;
-    text-decoration: underline;  
+    padding: 50px;
+    background-color: rgba(102, 102, 108, 0.592);
+    
 }
 
-p{
-    font-size: 40px;
-    text-align: justify;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+nav a:hover{
+    background-color: grey;
+    
+    
 }
 
-h2{
-    letter-spacing: 8px;
-    text-transform: uppercase;
+.link {
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+} 
+ 
+.fotos h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.turismo{
+    display:flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+.fotos h1{
+color: rgb(224, 23, 23);
+}
+
+.zona img{
+width: 500px;
+height: auto;
+padding: 30px;
+}
+.zona h4{
+    color: rgb(96, 237, 223);
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.832);
+}
+
+.pie{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(6, 159, 85);
+}
+
+.bandera img{
+    display: block;
+    margin: auto ;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+}
+
+
+
