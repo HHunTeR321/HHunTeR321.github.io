@@ -1,0 +1,29 @@
+
+    /*selector universal*/
+*{
+    margin: 10px 0 0 10px  ;
+}
+
+/*selector simple*/
+body{
+    background-color: rgb(108, 106, 239);
+
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    text-decoration: underline;  
+}
+
+p{
+    font-size: 40px;
+    text-align: justify;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+h2{
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}

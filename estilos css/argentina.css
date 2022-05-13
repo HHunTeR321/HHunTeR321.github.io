@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*se cambia el modelo de pagina*/
+    box-sizing: border-box;
+
+}
+html{
+    background-color: coral;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    /*background-attachtment: fixed;*/
+
+    background-size: cover;
+
+}
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*se adapta a cualquier tamaño de pantalla*/
+    font-size: 1.5em;
+    /*ocupa toda la pantalla*/
+    min-height: 100%;
+}
+
+body > *{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    /*separacion de los elementos*/
+    gap: 10px;
+    /*proporciona una cuadricula de un sola columna*/
+    display:grid
+}
+
+body{
+    grid-template-areas: 
+    "header"
+    "nav"
+    "article"
+    "aside"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: chocolate;
+}
+.article{
+    grid-area: article;
+    background-color: bisque;
+}
+.aside{
+    grid-area: aside;
+    background-color: gold;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: green;
+}
+
+/*efecto desenfoque*/
+/*img:hover{
+    filter: blur(5px);
+}*/
+
+/*filtro en blanco y negro*/
+/*img:hover{
+    filter: grayscale(80%);
+}*/
+
+img:hover{
+    /*filter: sepia(60%);*/
+    /*filter: saturate(180%);*/
+    filter: opacity(.5);
+}
+
+
+@media (min-width:600px){
+    body{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 50px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside article"
+        "footer footer"
+        ;
+        
+    }
+}
+
+@media (min-width:900px){
+    body{
+        grid-template:
+        "header header header" 100px
+        "nav article aside" auto
+        "footer footer footer" 100px / 200px auto 200px
+    }
+}

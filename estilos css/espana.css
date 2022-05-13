@@ -1,0 +1,65 @@
+*{
+margin: 0;
+}
+.menu{
+    width: 500px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.lista > li{
+    float: left;
+}
+
+.lista li a{
+    background-color: blue;
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+
+.lista li a:hover{
+    background-color: rgb(9, 90, 90);
+}
+
+.lista li ul{
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+.lista li:hover>ul{
+    display:block;
+
+}
+
+.lista li ul li{
+    position: relative;
+}
+.fotos h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.turismo{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.postal img{
+    width: 250px;
+}
+img:hover{
+    opacity: .5;
+    transition: .9s;
+}
