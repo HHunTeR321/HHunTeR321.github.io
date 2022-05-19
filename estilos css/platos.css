@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    }
+    html{
+        background-image: url(https://www.teahub.io/photos/full/245-2453892_fondos-de-ciudades-de-noche-hd.jpg);
+        background-position: no-repeat;
+        background-position: center center;
+        height: 1000px;
+        background-color: rgba(128, 128, 128, 0.906);
+        
+        background-size: cover;
+    }
+
+    .titulo{
+        color: brown;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        text-shadow: 0px 0px 9px gray;
+    
+    }
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 1.5em;
+        min-height: 100%;
+        
+        
+    }
+    
+    .menu{
+        width: 500px;
+        margin: auto;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    
+ul{
+list-style: none;
+}
+.lista > li{
+    float: left;
+    padding: 60px 40px;
+}
+.lista li a{
+    background-color: rgba(41, 200, 200, 0.811);
+    color: rgb(20, 22, 21);
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    
+}
+
+.lista li a:hover{
+    background-color: rgb(213, 229, 238);
+}
+.lista li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.lista li:hover>ul{
+    display: block;
+}
+.lista li ul li{
+    position: relative;
+}
+
+h1{
+    color: rgb(80, 202, 36);
+    text-align: center;
+    
+}
+
+div.galeria{
+    margin:10px 20px;
+    box-shadow: 0 4px 8px 0 lightblue;
+    float: left;
+    width: 350px;
+}
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+
+div.galeria:hover{
+    border: 1px solid lightcoral;
+    filter: saturate(180%);
+    
+}
+div.pie{
+    background-color: rgba(0, 0, 0, 0.697);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+.subtitulo{
+    color: red;
+}
+
+.articulo{
+    background-color: rgba(3, 3, 3, 0.791);
+    color: rgb(39, 246, 215);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 30px;
+}

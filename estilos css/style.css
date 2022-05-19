@@ -15,9 +15,7 @@ html{
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
     font-size: 1.5em;
-
     min-height: 100%;
 }
 
@@ -30,25 +28,41 @@ text-shadow: 0px 0px 9px rgb(98, 93, 93);
 }
 
 .menu{
-    
-    text-align: center;
-    padding: 50px;
-    background-color: rgba(102, 102, 108, 0.592);
-    
+    width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
 }
-
-nav a:hover{
-    background-color: grey;
-    
-    
+ul{
+    list-style: none;
 }
-
-.link {
-    color: azure;
+.lista > li{
+    float: left;
+    padding: 60px 40px;
+}
+.lista li a{
+    background-color: rgba(41, 200, 200, 0.811);
+    color: rgb(20, 22, 21);
     text-decoration: none;
-    font-weight: 600;
-} 
- 
+    padding: 10px 12px;
+    display: block;
+    
+}
+
+.lista li a:hover{
+    background-color: rgb(213, 229, 238);
+}
+.lista li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.lista li:hover>ul{
+    display: block;
+}
+.lista li ul li{
+    position: relative;
+}
+
 .fotos h1{
     text-align: center;
     font-size: 30px;
@@ -60,6 +74,7 @@ nav a:hover{
     flex-direction: row;
     align-items:center;
     justify-content: center;
+    
 }
 
 .fotos h1{
@@ -71,27 +86,53 @@ width: 500px;
 height: auto;
 padding: 30px;
 }
+.zona img:hover{
+    transform: rotate(-3deg);
+}
 .zona h4{
-    color: rgb(96, 237, 223);
-    text-align: left;
+    color: rgb(55, 116, 230);
+    text-align: center;
     padding: 10px;
-    background-color: rgba(128, 128, 128, 0.832);
+    background-color: rgba(22, 22, 22, 0.832);
+}
+
+.pie img{
+    width: 30px;
+    height: 30px;
 }
 
 .pie{
-    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: rgb(6, 159, 85);
+background-color: rgba(0, 0, 0, 0.778);
+text-align: center;
+color: rgb(27, 103, 8);
+font-size: 10px;
 }
 
-.bandera img{
+.bandera img {
     display: block;
-    margin: auto ;
-    width: 500px;
-    height: auto;
-    padding: 30px;
+    margin: 0;
+    padding: 0px 500px 0px;
+    width: 800px;
+    height: 500px;
+    
+}
+.bandera img:hover{
+    transform: rotate(-3deg);
 }
 
+.historia {
+    color: rgb(58, 158, 245);
+    background-color: rgba(0, 0, 0, 0.838);
+    margin: 0;
+}
+.titu{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.717);
+    padding: 20px;
+}
 
 
