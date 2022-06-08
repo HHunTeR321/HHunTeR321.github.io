@@ -13,7 +13,7 @@ ul{
 }
 
 .lista > li{
-    float: left;
+    float: right;
 }
 
 .lista li a{
