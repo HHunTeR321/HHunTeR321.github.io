@@ -1,58 +1,39 @@
-#header {
-    margin:auto;
-    width:600px;
-    font-family:Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul, ol {
-    list-style:none;
-}
-
-.nav > li {
-    float:left;
-}
-
-.nav li a {
-    background-color:#000;
-    color:#fff;
-    text-decoration:none;
-    padding:10px 12px;
-    display:block;
-}
-
-.nav li a:hover {
-    background-color:#434343;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-
-.nav li ul li {
-    position:relative;
-}
-
-.nav li ul li ul {
-    right:-140px;
-    top:0px;
-}
-
-html{
-    background-image: url(https://i.pinimg.com/originals/0c/0b/cc/0c0bccf1bf97ce7cac9f8f4204e1ee27.jpg);
-    background-position: no-repeat;
-    background-position: center center;
-    height: 1000px;
-    background-color: rgb(82, 82, 82);
-    background-size: cover;
-}
 body{
-    color: yellow;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    min-height: 100%;
+    background-color: rgba(240, 231, 200, 0.797);
+    color: #0ea1bb;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background:#06161b;
+    width: 100%;
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    display: block;
+}
+
+.menu li a:hover{
+    background: #ef8354;
 }
