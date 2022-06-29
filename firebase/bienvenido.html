@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HHunTeR321.github.io/firebase/bienvenido.css">
+    <link rel="stylesheet" href="/firebase/bienvenido.css">
+    <title>Bienvenidos</title>
+</head>
+<header class="bienvenido">Bienvenido a la pagina principal</header>
+<body>
+    <h3 class="subtitulo">Acontinuacion de daremos una pequeña informacion: </h3><br><br>
+
+    <h2 class="definicion">CLOUD FIRESTORE</h2>
+
+    <p class="texto">Cloud Firestore es una base de datos de documentos NoSQL que permite almacenar, sincronizar y consultar fácilmente datos en tus apps web y para dispositivos móviles a escala global.
+        Usa colecciones y documentos para estructurar tus datos con facilidad. Crea jerarquías para almacenar datos relacionados y recuperar los datos que necesitas mediante consultas expresivas de manera sencilla. Todas las consultas se escalan con el tamaño del conjunto de resultados (y no con el del conjunto de datos), por lo que tu aplicación está lista para escalar desde el primer día.
+    </p>
+    <center>
+    <div class="imagen_1">
+    <img src="https://firebase.google.com/static/images/products/firestore/firestore-illo_1x.png?hl=es-419" alt="">
+    </center>
+    </div>  
+    <br><br>
+    
+    <h2 class="definicion">REALTIME DATABASE</h2>
+    
+    <p class="texto">Firebase Realtime Database es una base de datos NoSQL alojada en la nube que te permite almacenar y sincronizar datos entre tus usuarios en tiempo real.La sincronización en tiempo real permite que los usuarios accedan a sus datos desde cualquier dispositivo, web o móvil, con facilidad, y los ayuda a trabajar en conjunto. Realtime Database se incluye en los SDK web y para dispositivos móviles, de manera que puedas crear apps sin la necesidad de usar servidores. También puedes ejecutar un código de backend que responda a los eventos que activa la base de datos a través de Cloud Functions para Firebase .</p>   
+    <center>
+    <div class="imagen_2">
+    <img src="https://firebase.google.com/static/images/products/realtime-database/database-2.png?hl=es-419" alt="">
+    </div>
+    </center>
+
+    <h2 class="definicion">REMOTE CONFIG</h2>
+    <p class="texto">Firebase Remote Config es un servicio de nube que te permite almacenar datos del tipo clave-valor. Remote ofrece variaciones de la experiencia del usuario de la aplicación para distintos segmentos según la versión de la app, el idioma, el público de Google Analytics y los segmentos importados. <br>
+        Remote Config sirve para almacenar datos simples, por ejemplo de configuración, que nos pueden servir para cambiar el aspecto y comportamiento de nuestra app sin que los usuarios tengan que descargar una nueva versión del store.
+        Por ejemplo, puedes cambiar el diseño o los colores de la app como apoyo para una promoción de temporada, sin necesidad de publicar una actualización.</p>
+    <center>
+    <div class="imagen_3">
+        <img src="https://miro.medium.com/max/1026/1*OUAeGm6jv0hO4XupGMtq9A.png" alt="">
+    </div>
+    </center>
+    <h2 class="definicion">FIREBASE EXTENSIONS</h2>
+    <p class="texto">Extensiones de Firebase es una función diseñada para aumentar la productividad y ofrecer funcionalidad extendida a tus apps sin la necesidad de investigar, escribir o depurar código por tu cuenta. <br>
+        Con Extensiones de Firebase, ofreces parámetros de configuración para tu extensión que son únicos según tus necesidades. También puedes revisar las API habilitadas, los recursos creados y los accesos otorgados a la extensión.</p>
+    <center>
+        <div class="imagen_4">
+        <img src="https://firebase.google.com/static/images/products/mods/mods-3.png?hl=es-419" alt="">
+        </div>
+    </center>
+    <h2 class="definicion">APP CHECK</h2>
+    <p class="texto">App Check ayuda a proteger sus recursos back-end del abuso, como el fraude de facturación y el phishing. Funciona tanto con los servicios de Firebase como con sus propios backends para mantener sus recursos seguros.
+        on App Check, los dispositivos que ejecutan su aplicación utilizarán un proveedor de atestación de aplicación o dispositivo que certifique uno o ambos de los siguientes: <br><br>
+
+-Las solicitudes se originan en su aplicación auténtica<br><br>
+-Las solicitudes se originan en un dispositivo auténtico y no manipulado<br><br>
+-Esta atestación se adjunta a cada solicitud que hace su aplicación a sus recursos de backend de Firebase.<br><br>
+
+App Check tiene soporte integrado para usar los siguientes servicios como proveedores de atestación:<br>
+
+DeviceCheck o App Attest en plataformas Apple
+Juega Integrity o SafetyNet en Android
+reCAPTCHA v3 o reCAPTCHA Enterprise en aplicaciones web
+Si estos son insuficientes para sus necesidades, también puede implementar su propio servicio que utilice un proveedor de atestación de terceros o sus propias técnicas de atestación.
+    </p>
+    <center>
+    <div class="imagen_5">
+    <img src="https://i.ytimg.com/vi/LFz8qdF7xg4/maxresdefault.jpg" alt="">
+    </div>
+    </center>
+    <center>
+    <button id="salir"><h1>salir sesion</h1></button>
+    </center>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCAEEMNpjYrsDR5ohvdKa-PoKmlExd1qGM",
+            authDomain: "usuarios-f48c4.firebaseapp.com",
+            projectId: "usuarios-f48c4",
+            storageBucket: "usuarios-f48c4.appspot.com",
+            messagingSenderId: "777094303070",
+            appId: "1:777094303070:web:e774cdc24040b184bf13cf"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById("salir").addEventListener("click", function(){
+            signOut(auth).then(() => {
+                window.open("HHunTeR321.github.io\firebase\index.html", "_self")
+            // Sign-out successful.
+            }).catch((error) => {
+            // An error happened.
+            });
+        })
+
+        </script>
+</body>
+</html>
