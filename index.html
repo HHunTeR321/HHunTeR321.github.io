@@ -77,7 +77,7 @@
             .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            console.log("tu cuenta no existe")
+            alert("tu cuenta no existe")
             });
 
         })
@@ -93,6 +93,7 @@
                 // se creara el usuario en firebase
                 const user = userCredential.user;
                 console.log("Cuenta creada")
+                alert("Cuenta registrada")
                 // ...
             })
             .catch((error) => {
