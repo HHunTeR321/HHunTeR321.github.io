@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HHunTeR321.github.io/firebase/logear.css">
+    <link rel="stylesheet" href="/firebase/logear.css">
+    <title>registrar cuenta</title>
+</head>
+<header>FIREBASE</header>
+<body>
+    <br> 
+    <h1 class="bienvenido">Bienvenido a mi pagina web</h1><br>
+    <p><h3 class="texto">Ingresa tu cuenta<br>
+        o <br>Registra una cuenta nueva</h3></p><br><br>
+
+    <h4>¿No tienes cuenta? !Registrate ahora!</h4><br>
+    <p>ingresa correo Electronico:</p>
+    <input type="email" name="" id="email">
+    <br><br><br>
+    <p>ingresa contraseña: </p>
+    <input type="password" name="" id="pass"><br>
+    <button id="ingresar"><h3>Registrarme</h3></button>
+    <br><br>
+    <center>
+    <hr>
+    </center> 
+    <br>
+    <h3 class="iniciar">Iniciar sesion</h3>
+    <br>
+    <p>Ingrese su cuenta registrada:</p>
+    <input type="email" name="" id="email1">
+    <br><br>
+    <p>escriba su contraseña: </p>
+    <input type="password" name="" id="pass1"><br>
+    <button id="iniciar"><h3>Iniciar sesion</h3></button>
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        // importando el acceso para crear cuenta y contraseña
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyCAEEMNpjYrsDR5ohvdKa-PoKmlExd1qGM",
+        authDomain: "usuarios-f48c4.firebaseapp.com",
+        projectId: "usuarios-f48c4",
+        storageBucket: "usuarios-f48c4.appspot.com",
+        messagingSenderId: "777094303070",
+        appId: "1:777094303070:web:e774cdc24040b184bf13cf"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        
+        document.getElementById("ingresar").addEventListener("click", function(){
+
+        document.getElementById("iniciar").addEventListener("click",function(){
+            const email1 = document.getElementById("email1").value
+            const pass1= document.getElementById("pass1").value
+            
+            signInWithEmailAndPassword(auth, email1, pass1)
+            .then((userCredential) => {
+             // Signed in
+            const user = userCredential.user;
+            window.open("https://hhunter321.github.io/firebase/bienvenido.html","_self")
+            console.log("ya puedes ingresar a la nueva pagina")
+            // ...
+            })
+            .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log("tu cuenta no existe")
+            });
+
+        })
+    })
+        //creamos el evento clic al activar el boton ingresar
+        document.getElementById("ingresar").addEventListener("click",function(){
+            //generamos contanstes
+            const email = document.getElementById("email").value
+            const password = document.getElementById("pass").value
+            //copio el acceso a estos elementos
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // se creara el usuario en firebase
+                const user = userCredential.user;
+                console.log("Cuenta creada")
+                // ...
+            })
+            .catch((error) => {
+                //apareceran errores de llenado
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            // ..
+                console.log(errorCode + errorMessage)
+            });
+            
+        })
+    </script>
+</body>
+</html>
