@@ -4,7 +4,7 @@
 }
 
 html{
-    background-image: url(https://www.xtrafondos.com/descargar.php?id=2802&resolucion=1920x1080);
+    background-image: url(https://cdn.create.vista.com/api/media/medium/461201900/stock-photo-minimalistic-dark-blue-polygonal-background?token=);
     background-position: no-repeat;
     background-position: center center;
     height: 1000px;
@@ -19,6 +19,10 @@ body{
     justify-content: center;
     color: rgb(248, 236, 172);
 
+}
+
+.avatar img{
+    width: 300px;
 }
 
 header{
@@ -44,12 +48,12 @@ header{
 }
 
 h4{
-    color: rgb(189, 85, 85);
+    color: rgb(235, 223, 223);
     font-size: 40px;
 }
 
 .iniciar{
-    color: rgb(189, 85, 85);
+    color: rgb(236, 224, 224);
     font-size: 40px;
 }
 
