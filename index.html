@@ -8,17 +8,16 @@
     <link rel="stylesheet" href="/firebase/logear.css">
     <title>registrar cuenta</title>
 </head>
-<header>FIREBASE</header>
 <body>
-    <br> 
-    <h1 class="bienvenido">Bienvenido a mi pagina web</h1><br>
-    <p><h3 class="texto">Ingresa tu cuenta<br>
-        o <br>Registra una cuenta nueva</h3></p><br><br>
-
+    <center>
+        <aside class="avatar">
+        <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="">
+        </aside>
+    </center>
     <h4>¿No tienes cuenta? !Registrate ahora!</h4><br>
     <p>ingresa correo Electronico:</p>
     <input type="email" name="" id="email">
-    <br><br><br>
+    <br><br>
     <p>ingresa contraseña: </p>
     <input type="password" name="" id="pass"><br>
     <button id="ingresar"><h3>Registrarme</h3></button>
@@ -70,7 +69,7 @@
             .then((userCredential) => {
              // Signed in
             const user = userCredential.user;
-            window.open("https://hhunter321.github.io/firebase/bienvenido.html","_self")
+            window.open("https://hhunter321.github.io/htmlfinal/Definicion.html","_self")
             console.log("ya puedes ingresar a la nueva pagina")
             // ...
             })
